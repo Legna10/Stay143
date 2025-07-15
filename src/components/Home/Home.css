@@ -1,0 +1,36 @@
+.home-container {
+  height: 80vh; 
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fce4ec, #f8bbd0);
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #880e4f;
+  gap: 10px;
+}
+
+.home-title {
+  font-size: 36px;
+}
+
+.home-description {
+  font-size: 18px;
+  color: #ad1457;
+  font-style: italic;
+}
+
+.home-logo {
+  width: 150px;
+  border-radius: 20px;
+}

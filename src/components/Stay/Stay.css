@@ -1,0 +1,72 @@
+.stay-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.stay-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.stay-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.stay-card {
+  padding: 10px;
+  background: #fff0f6;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.title-card {
+  font-size: 24px;
+}
+.description-card {
+  margin: 10px 0px;
+  text-align: justify;
+}
+.flag-form input {
+  padding: 8px;
+  width: 70%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.flag-form button {
+  padding: 8px;
+  background: #ff69b4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;
+}
+.flag-form button:hover {
+  background: #ff69b4;
+  transform: translateY(1px);
+}
+
+.attach-file {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.attach-file:hover {
+  color:#ff69b4;
+}
+
+.stay-card.coming-soon {
+  background: #ffe4f0;
+  border: 2px dashed #ff69b4;
+  font-style: italic;
+  opacity: 0.9;
+}
+
