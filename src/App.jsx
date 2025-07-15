@@ -12,20 +12,20 @@ import './App.css';
 
 function App() {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true); // ✅ State untuk nunggu auth ready
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
-      setLoading(false); // ✅ Auth sudah dicek
+      setLoading(false); 
     });
 
-    return () => unsubscribe(); // Cleanup listener saat unmount
+    return () => unsubscribe(); 
   }, []);
 
   if (loading) {
-    return <div className="loading-screen">Loading...</div>; // Bisa diganti animasi cantik 💖
+    return <div className="loading-screen">Loading...</div>; 
   }
 
   return (

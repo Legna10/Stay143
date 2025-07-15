@@ -21,19 +21,29 @@
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 .title-card {
   font-size: 24px;
 }
+
 .description-card {
   margin: 10px 0px;
   text-align: justify;
 }
+
+.flag-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
 .flag-form input {
   padding: 8px;
-  width: 70%;
-  margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  flex: 1 1 200px;
+  min-width: 180px;
 }
 
 .flag-form button {
@@ -43,8 +53,10 @@
   color: white;
   border-radius: 5px;
   cursor: pointer;
-  width: 20%;
+  min-width: 100px;
+  flex-shrink: 0;
 }
+
 .flag-form button:hover {
   background: #ff69b4;
   transform: translateY(1px);
@@ -60,7 +72,7 @@
 }
 
 .attach-file:hover {
-  color:#ff69b4;
+  color: #ff69b4;
 }
 
 .stay-card.coming-soon {
@@ -70,3 +82,36 @@
   opacity: 0.9;
 }
 
+/* 📱 RESPONSIVE: untuk layar di bawah 480px */
+@media (max-width: 480px) {
+  .stay-title {
+    font-size: 24px;
+  }
+
+  .stay-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-card {
+    padding: 12px;
+  }
+
+  .title-card {
+    font-size: 20px;
+  }
+
+  .description-card {
+    font-size: 14px;
+  }
+
+  .flag-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flag-form input,
+  .flag-form button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
