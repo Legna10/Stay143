@@ -82,7 +82,6 @@
   opacity: 0.9;
 }
 
-/* 📱 RESPONSIVE: untuk layar di bawah 480px */
 @media (max-width: 480px) {
   .stay-title {
     font-size: 24px;
