@@ -16,6 +16,12 @@ const challenges = [
     description:
       "Stray Kids sent you a strange image. It looks normal — but they’re known for hiding things deep. Can you find the full message?\n\n 💡Look closer. Some secrets are hidden softly, not loudly. Layers matter.",
     file: "/stay/fromskz.jpg"
+  },
+  {
+    title: "an unforgettable concert",
+    description:
+      "Someone captured this unforgettable concert — but there's more hidden than just memories.\n\n 💡Don't forget the date and who showed up. Sometimes, digital traces say more than words.",
+    file: "/stay/unforgettable_concert.jpg"
   }
 ];
 

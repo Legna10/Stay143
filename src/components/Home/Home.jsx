@@ -17,7 +17,7 @@ function Home() {
         <h1 className="home-title">Welcome to...</h1>
         <img src={logo} alt="Stay143 Logo" className="home-logo" />
         <p className="home-description">No photocard here... just hidden flags 🎟️🚩</p>
-        <button className="button"onClick={handleStart}>Let's get started</button>
+        <button className="button" onClick={handleStart}>Let's get started</button>
       </div>
     </div>
   );
